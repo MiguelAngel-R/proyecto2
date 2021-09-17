@@ -1,5 +1,54 @@
-body{
+#row ul{
+    list-style-type: none;    
     margin: 0;
+    padding: 0;    
+    background-color: lightblue;
+    overflow: overlay;
+    /*position: fixed; deja fija el menu de navegacion*/
 }
 
-https://github.com/MiguelAngel-R/proyecto2.git
+#row li{
+    float: left; 
+}
+
+#row li a{
+    text-decoration: none;
+    color: green;
+    display: block;    
+    padding: 14px 16px;
+    transition-duration: 1s;
+}
+
+#row li a:hover:not(.activa){ /*no se aplicara hover en el link que tenga la clase .activa*/
+    text-decoration: underline;
+    background-color:lightgray;
+}
+
+.activa{
+    background-color:black;
+}
+
+#row li a[target]{
+    background-color:yellow;
+}
+
+input[type="text"]{/*aplicamos estos cambios solo a las etiquetas que tienen el tipo text*/
+    background-color:lightgray;
+    color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 40%;
+    height: 30px;
+    margin-top: 5px;    
+}
+
+
+form{    
+    margin-top:20px;    
+}
+
+input[type="text"]:focus{/*usamos focus para que cuando estemos enfocados o posicionados en un evento se cambie de color*/
+    background-color: lightblue;
+}
+
+
